@@ -138,7 +138,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -156,7 +156,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -177,7 +177,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -199,7 +199,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -224,7 +224,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -250,7 +250,7 @@ async def get_formats(CallbackQuery, videoid, user_id, type):
                         callback_data=f"good {videoid}|{user_id}",
                     ),
                     InlineKeyboardButton(
-                        text="🗑 Close Menu", callback_data=f"close2"
+                        text="🔄 Close Menu", callback_data=f"close2"
                     ),
                 ],
             ]
@@ -293,7 +293,7 @@ def get_type(type, format, videoid, user_id):
                     callback_data=f"good {videoid}|{user_id}",
                 ),
                 InlineKeyboardButton(
-                    text="🗑 Close Menu", callback_data=f"close2"
+                    text="🔄 Close Menu", callback_data=f"close2"
                 ),
             ],
         ]
