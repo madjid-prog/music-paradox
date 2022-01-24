@@ -1,8 +1,8 @@
 <p align="center">
-  <img src="https://telegra.ph/file/9cfbfa45850c1dab86654.jpg">
+  <img src="https://telegra.ph/file/3db5be2f3bfa692e92624.jpg">
 
 <h4 align="center">
-    Bot Telegram Music+video yang ditulis dengan Python menggunakan Pyrogram dan Py-Tgcalls 
+     PARADOX MUSIC BOT 
 </h4>
 <p align="center">
     <a href="https://t.me/venzastreambot"> Ready-To-Use Bot </a> •
@@ -11,7 +11,7 @@
     <a href="https://t.me/justvenzzz"> Support Chat </a> 
 </p>
     
-# venz music bot
+# paradox music bot
 Bot Musik + Video Telegram yang Kuat di mana Anda dapat melakukan streaming lagu, video, dan bahkan streaming langsung dalam panggilan grup Anda melalui berbagai sumber. Muncul dengan fitur yang ramah pengguna dan mudah digunakan namun elegan
 
 ## Deployment
