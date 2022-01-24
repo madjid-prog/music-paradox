@@ -1,13 +1,13 @@
 {
-  "name": "Yukki Music Bot",
-  "description": "A Telegram Music Bot with proper functions written in Python with Pyrogram and Py-Tgcalls.",
+  "name": "venz music bot",
+  "description": "Bot Musik Telegram dengan fungsi yang tepat ditulis dengan Python dengan Pyrogram dan Py-Tgcalls.",
   "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
   "keywords": [
   "python3",
   "telegram",
   "bot",
-  "Yukki",
-  "YukkiMusicBot",
+  "Venz",
+  "Venzmusicbot",
   "telegram-bot",
   "pyrogram"
   ],
