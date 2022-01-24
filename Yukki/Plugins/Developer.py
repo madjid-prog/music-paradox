@@ -20,20 +20,20 @@ from Yukki.Utilities.tasks import add_task, rm_task
 
 __MODULE__ = "Broadcast"
 __HELP__ = """
-**Note:**
-Only for Sudo Users.
+**Catatan:**
+Hanya untuk Pengguna Sudo.
 
 
-/broadcast [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats.
+/broadcast [Pesan atau Balas Pesan]
+- Siarkan pesan apa pun ke Obrolan yang Dilayani Bot.
 
 
-/broadcast_pin [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats with message getting Pinned in chat [Disabled Notifications].
+/broadcast_pin [Pesan atau Balas Pesan]
+- Siarkan pesan apa pun ke Obrolan yang Dilayani Bot dengan pesan yang disematkan di obrolan [Pemberitahuan Dinonaktifkan].
 
 
-/broadcast_pin_loud [Message or Reply to a Message]
-- Broadcast any message to Bot's Served Chats with message getting Pinned in chat [Enabled Notifications].
+/broadcast_pin_loud [Pesan atau Balas Pesan]
+- Siarkan pesan apa pun ke Obrolan yang Dilayani Bot dengan pesan yang disematkan di obrolan [Pemberitahuan yang Diaktifkan].
 """
 
 
@@ -60,7 +60,7 @@ async def edit_or_reply(msg: Message, **kwargs):
 async def executor(client, message):
     if len(message.command) < 2:
         return await edit_or_reply(
-            message, text="__Nigga Give me some command to execute.__"
+            message, text="__Beri aku beberapa perintah untuk dieksekusi.__"
         )
     try:
         cmd = message.text.split(" ", maxsplit=1)[1]
@@ -99,14 +99,14 @@ async def executor(client, message):
             [
                 [
                     InlineKeyboardButton(
-                        text="⏳", callback_data=f"runtime {t2-t1} Seconds"
+                        text="⏳", callback_data=f"waktu berjalan {t2-t1} Detik"
                     )
                 ]
             ]
         )
         await message.reply_document(
             document=filename,
-            caption=f"**INPUT:**\n`{cmd[0:980]}`\n\n**OUTPUT:**\n`Attached Document`",
+            caption=f"**INPUT:**\n`{cmd[0:980]}`\n\n**OUTPUT:**\n`Dokumen Terlampir`",
             quote=False,
             reply_markup=keyboard,
         )
