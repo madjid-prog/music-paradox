@@ -37,19 +37,19 @@ __HELP__ = """
 
 
 /pause
-- Jeda pemutaran musik di obrolan suara.
+- TOLOL MALAH DI PAUSE.
 
 /resume
-- Lanjutkan musik yang dijeda di obrolan suara.
+- LANJUT BANG.
 
 /skip
-- Lewati musik yang sedang diputar di obrolan suara
+- LEWATIN GAJELAS TOLOL LAGUNYA
 
 /end or /stop
-- Hentikan permainannya.
+- BERISIK GOBLOK
 
 /queue
-- Periksa daftar antrian.
+- LIAT LIST LU BEGO.
 
 
 **Catatan:**
