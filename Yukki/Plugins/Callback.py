@@ -167,7 +167,7 @@ async def admin_risghts(_, CallbackQuery):
                 final_output = await CallbackQuery.message.reply_photo(
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
-                    caption=f"<b>__Obrolan Suara Dilewati__</b>\n\n🎥<b>__Mulai Memutar:__</b> {title} \n⏳<b>__Durasi:__</b> {duration_min} \n👤<b>__Di req oleh:__ </b> {mention}",
+                    caption=f"<b>__Melewati Obrolan Suara__</b>\n\n🎥<b>__Mulai Memutar:__</b> {title} \n⏳<b>__Durasi:__</b> {duration_min} \n👤<b>__Di req oleh:__ </b> {mention}",
                 )
                 await start_timer(
                     videoid,
@@ -204,7 +204,7 @@ async def admin_risghts(_, CallbackQuery):
                         photo="Utils/Telegram.JPEG",
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Obrolan Video Dilewati__</b>\n\n👤**__Di req oleh:__** {mention}"
+                            f"<b>__Melewati Obrolan Video__</b>\n\n👤**__Di req oleh:__** {mention}"
                         ),
                     )
                     await mystic.delete()
@@ -244,7 +244,7 @@ async def admin_risghts(_, CallbackQuery):
                         photo=thumb,
                         reply_markup=InlineKeyboardMarkup(buttons),
                         caption=(
-                            f"<b>__Obrolan Video Dilewati__</b>\n\n🎥<b>__Memulai Pemutaran Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Di req oleh:__** {mention}"
+                            f"<b>__Melewati Obrolan Video__</b>\n\n🎥<b>__Memulai Pemutaran Video:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n👤**__Di req oleh:__** {mention}"
                         ),
                     )
                     os.remove(thumb)
@@ -260,7 +260,7 @@ async def admin_risghts(_, CallbackQuery):
             else:
                 await CallbackQuery.message.delete()
                 await CallbackQuery.answer(
-                    "Skipped! Playlist Playing....", show_alert=True
+                    "Dilewati! Putar Daftar Putar....", show_alert=True
                 )Q
                 mystic = await CallbackQuery.message.reply_text(
                     f"**{MUSIC_BOT_NAME} Fungsi Daftar Putar**\n\n__Mengunduh Musik Berikutnya Dari Daftar Putar....__\n\nTombol Digunakan Oleh :- {CallbackQuery.from_user.mention}"
@@ -302,7 +302,7 @@ async def admin_risghts(_, CallbackQuery):
                     photo=thumb,
                     reply_markup=InlineKeyboardMarkup(buttons),
                     caption=(
-                        f"<b>__Obrolan Suara Dilewati__</b>\n\n🎥<b>__Mulai Memutar:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Durasi:__</b> {duration_min} Mins\n👤**__Di req oleh:__** {mention}"
+                        f"<b>__Melewati Obrolan Suara__</b>\n\n🎥<b>__Mulai Memutar:__ </b>[{title[:25]}](https://www.youtube.com/watch?v={videoid}) \n⏳<b>__Durasi:__</b> {duration_min} Mins\n👤**__Di req oleh:__** {mention}"
                     ),
                 )
                 os.remove(thumb)
@@ -465,7 +465,7 @@ async def play_playlist(_, CallbackQuery):
             if await isPreviewUp(preview):
                 await CallbackQuery.message.reply_photo(
                     photo=preview,
-                    caption=f"This is Queued Playlist of {third_name}.\n\nPlayed by :- {CallbackQuery.from_user.mention}",
+                    caption=f"Ini adalah Antrian Daftar Putar dari {third_name}.\n\nDimainkan oleh :- {CallbackQuery.from_user.mention}",
                     quote=False,
                     reply_markup=InlineKeyboardMarkup(buttons),
                 )
