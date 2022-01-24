@@ -19,7 +19,7 @@ async def unban_assistant_(_, CallbackQuery):
     a = await app.get_chat_member(CallbackQuery.message.chat.id, BOT_ID)
     if not a.can_restrict_members:
         return await CallbackQuery.answer(
-            "I am not having ban/unban user permission. Ask any admin to unban the assistant.",
+            "Saya tidak memiliki izin pengguna untuk ban/unban. Minta admin mana pun untuk membatalkan ban asisten.",
             show_alert=True,
         )
     else:
@@ -33,7 +33,7 @@ async def unban_assistant_(_, CallbackQuery):
                 show_alert=True,
             )
         return await CallbackQuery.edit_message_text(
-            "Assistant Unbanned. Try Playing Now."
+            "Asisten Tidak Diban. Coba Main Sekarang."
         )
 
 
@@ -71,12 +71,12 @@ def AssistantAdd(mystic):
             )
             if b.status == "kicked":
                 return await message.reply_text(
-                    f"Assistant Account[{ASS_ID}] is banned.\nUnban it first to use Music Bot\n\nUsername: @{ASS_USERNAME}",
+                    f"Akun Asisten[{ASS_ID}] Dibanned.\nUnban untuk menggunakan Bot Musik\n\nUsername: @{ASS_USERNAME}",
                     reply_markup=key,
                 )
             if b.status == "banned":
                 return await message.reply_text(
-                    f"Assistant Account[{ASS_ID}] is banned.\nUnban it first to use Music Bot\n\nUsername: @{ASS_USERNAME}",
+                    f"Akun Asisten[{ASS_ID}] Dibanned.\nUnban untuk menggunakan Bot Musik\n\nUsername: @{ASS_USERNAME}",
                     reply_markup=key,
                 )
         except UserNotParticipant:
@@ -87,7 +87,7 @@ def AssistantAdd(mystic):
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Assistant Failed To Join__\n\n**Reason**: {e}"
+                        f"__Asisten Gagal Bergabung__\n\n**Reason**: {e}"
                     )
                     return
             else:
@@ -101,13 +101,13 @@ def AssistantAdd(mystic):
                         )
                     await ASS_ACC.join_chat(invitelink)
                     await message.reply(
-                        f"{ASS_NAME} Joined Successfully",
+                        f"{ASS_NAME} Berhasil Bergabung",
                     )
                 except UserAlreadyParticipant:
                     pass
                 except Exception as e:
                     await message.reply_text(
-                        f"__Assistant Failed To Join__\n\n**Reason**: {e}"
+                        f"__Asisten Gagal Bergabung__\n\n**Reason**: {e}"
                     )
                     return
         return await mystic(_, message)
