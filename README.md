@@ -1,22 +1,22 @@
-<p align="center"><img src="https://github.com/notreallyshikhar/YukkiMusicBot/blob/master/Utils/icon.gif" alt="ICON" width="250" height="250"/></p>
+<p align="center"><img src="https://github.com/elskuyy/bokeppolitik/https://telegra.ph/file/9cfbfa45850c1dab86654.jpg
 
 <h4 align="center">
-    A Telegram Music+video Bot written in Python using Pyrogram and Py-Tgcalls 
+    Bot Telegram Music+video yang ditulis dengan Python menggunakan Pyrogram dan Py-Tgcalls 
 </h4>
 <p align="center">
-    <a href="https://t.me/YukkiRobot"> Ready-To-Use Bot </a> •
+    <a href="https://t.me/venzastreambot"> Ready-To-Use Bot </a> •
     <a href="https://notreallyshikhar.gitbook.io/yukkimusicbot/about/getting-started"> Documentation </a> •
-    <a href="https://t.me/OfficialYukki"> Support Channel </a> •
-    <a href="https://t.me/YukkiSupport"> Support Chat </a> 
+    <a href="https://t.me/venzproject"> Support Channel </a> •
+    <a href="https://t.me/justvenzzz"> Support Chat </a> 
 </p>
     
-# Yukki Music Bot
-A Powerful Telegram Music+Video Bot by which you can stream songs, videos and even live streams in your group calls via various sources. It comes with  user friendly and easy to use yet elegant features.
+# venz music bot
+Bot Musik + Video Telegram yang Kuat di mana Anda dapat melakukan streaming lagu, video, dan bahkan streaming langsung dalam panggilan grup Anda melalui berbagai sumber. Muncul dengan fitur yang ramah pengguna dan mudah digunakan namun elegan
 
 ## Deployment
 Read [Docs](https://notreallyshikhar.gitbook.io/yukkimusicbot/deployment/requirements) for Detailed Description and Setup Guide on deploying Bot.
 
-> Click on buttons to expand!
+> Klik tombol untuk memperluas!
 <details>
 <summary><b>🔗 Requirements</b></summary>
 <br>
