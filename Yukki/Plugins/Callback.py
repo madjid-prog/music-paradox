@@ -261,7 +261,7 @@ async def admin_risghts(_, CallbackQuery):
                 await CallbackQuery.message.delete()
                 await CallbackQuery.answer(
                     "Dilewati! Putar Daftar Putar....", show_alert=True
-                )Q
+                )
                 mystic = await CallbackQuery.message.reply_text(
                     f"**{MUSIC_BOT_NAME} Fungsi Daftar Putar**\n\n__Mengunduh Musik Berikutnya Dari Daftar Putar....__\n\nTombol Digunakan Oleh :- {CallbackQuery.from_user.mention}"
                 )
