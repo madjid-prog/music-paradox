@@ -33,7 +33,7 @@ HELPABLE = {}
 
 async def initiate_bot():
     with console.status(
-        "[magenta] Finalizing Booting...",
+        "[magenta] Menyelesaikan Booting...",
     ) as status:
         try:
             chats = await get_active_video_chats()
@@ -50,11 +50,11 @@ async def initiate_bot():
         except Exception as e:
             pass
         status.update(
-            status="[bold blue]Scanning for Plugins", spinner="earth"
+            status="[bold blue]Memindai Plugin", spinner="earth"
         )
         console.print("Found {} Plugins".format(len(ALL_MODULES)) + "\n")
         status.update(
-            status="[bold red]Importing Plugins...",
+            status="[bold red]Mengimpor Plugin...",
             spinner="bouncingBall",
             spinner_style="yellow",
         )
@@ -82,12 +82,12 @@ async def initiate_bot():
             status="[bold blue]Importation Completed!",
         )
     console.print(
-        "[bold green]Congrats!! Yukki Music Bot has started successfully!\n"
+        "[bold green]Congrats!! Venz Music Bot telah dimulai dengan sukses!\n"
     )
     try:
         await app.send_message(
             LOG_GROUP_ID,
-            "<b>Congrats!! Music Bot has started successfully!</b>",
+            "<b>Selamat!! Bot Musik telah dimulai dengan sukses!</b>",
         )
     except Exception as e:
         print(
@@ -100,7 +100,7 @@ async def initiate_bot():
         print("Promote Bot as Admin in Logger Channel")
         console.print(f"\n[red]Stopping Bot")
         return
-    console.print(f"\n┌[red] Bot Started as {BOT_NAME}!")
+    console.print(f"\n┌[red] Bot Dimulai sebagai {BOT_NAME}!")
     console.print(f"├[green] ID :- {BOT_ID}!")
     if STRING1 != "None":
         try:
@@ -115,8 +115,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_1.join_chat("OfficialYukki")
-            await ASS_CLI_1.join_chat("YukkiSupport")
+            await ASS_CLI_1.join_chat("justvenzzz")
+            await ASS_CLI_1.join_chat("someonefromyou")
         except:
             pass
         console.print(f"├[red] Assistant 1 Started as {ASSNAME1}!")
@@ -134,8 +134,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_2.join_chat("OfficialYukki")
-            await ASS_CLI_2.join_chat("YukkiSupport")
+            await ASS_CLI_2.join_chat("justvenzzz")
+            await ASS_CLI_2.join_chat("someonefromyou")
         except:
             pass
         console.print(f"├[red] Assistant 2 Started as {ASSNAME2}!")
@@ -153,8 +153,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_3.join_chat("OfficialYukki")
-            await ASS_CLI_3.join_chat("YukkiSupport")
+            await ASS_CLI_3.join_chat("justvenzzz")
+            await ASS_CLI_3.join_chat("someonefromyou")
         except:
             pass
         console.print(f"├[red] Assistant 3 Started as {ASSNAME3}!")
@@ -172,8 +172,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_4.join_chat("OfficialYukki")
-            await ASS_CLI_4.join_chat("YukkiSupport")
+            await ASS_CLI_4.join_chat("justvenzzz")
+            await ASS_CLI_4.join_chat("someonefromyou")
         except:
             pass
         console.print(f"├[red] Assistant 4 Started as {ASSNAME4}!")
@@ -191,8 +191,8 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await ASS_CLI_5.join_chat("OfficialYukki")
-            await ASS_CLI_5.join_chat("YukkiSupport")
+            await ASS_CLI_5.join_chat("justvenzzz")
+            await ASS_CLI_5.join_chat("someonefromyou")
         except:
             pass
         console.print(f"├[red] Assistant 5 Started as {ASSNAME5}!")
@@ -210,11 +210,11 @@ async def initiate_bot():
             console.print(f"\n[red]Stopping Bot")
             return
         try:
-            await LOG_CLIENT.join_chat("OfficialYukki")
-            await LOG_CLIENT.join_chat("YukkiSupport")
+            await LOG_CLIENT.join_chat("justvenzzz")
+            await LOG_CLIENT.join_chat("someonefromyou")
         except:
             pass
-    console.print(f"└[red] Yukki Music Bot Boot Completed.")
+    console.print(f"└[red] Venz Boot Bot Musik Selesai.")
     if STRING1 != "None":
         await pytgcalls1.start()
     if STRING2 != "None":
@@ -230,8 +230,8 @@ async def initiate_bot():
 
 
 home_text_pm = f"""Hello ,
-My name is {BOT_NAME}.
-A Telegram Music+Video Streaming bot with some useful features.
+Nama saya adalah {BOT_NAME}.
+Bot Telegram Music+Video Streaming dengan beberapa fitur berguna.
 
 All commands can be used with: / """
 
@@ -364,7 +364,7 @@ async def start_command(_, message):
         umention = f"[{sender_name}](tg://user?id={int(sender_id)})"
         return await LOG_CLIENT.send_message(
             LOG_GROUP_ID,
-            f"{message.from_user.mention} has just started Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
+            f"{message.from_user.mention} baru saja memulai Bot.\n\n**USER ID:** {sender_id}\n**USER NAME:** {sender_name}",
         )
     return
 
