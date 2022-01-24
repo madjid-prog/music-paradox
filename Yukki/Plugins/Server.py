@@ -28,29 +28,29 @@ urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 __MODULE__ = "Server"
 __HELP__ = f"""
 
-**Note:**
-**Only for Sudo Users**
+**Catatan:**
+**Hanya untuk Pengguna Sudo**
 
 /get_log
-- Get log of last 100 lines from Heroku.
+- Dapatkan log 100 baris terakhir dari Heroku.
 
 /get_var
-- Get a config var from Heroku or .env.
+- Dapatkan var konfigurasi dari Heroku atau .env.
 
 /del_var
-- Delete any var on Heroku or .env.
+- Hapus semua var di Heroku atau .env.
 
 /set_var [Var Name] [Value]
-- Set a Var or Update a Var on heroku or .env. Seperate Var and its Value with a space.
+- Setel Var atau Perbarui Var di heroku atau .env. Pisahkan Var dan Nilainya dengan spasi.
 
 /usage
-- Get Dyno Usage.
+- Dapatkan Penggunaan Dyno.
 
 /update
-- Update Your Bot.
+- Perbarui Bot Anda.
 
 /restart 
-- Restart Bot [All downloads, cache, raw files will be cleared too]. 
+- Mulai ulang Bot [Semua unduhan, cache, file mentah akan dihapus juga]. 
 """
 
 
