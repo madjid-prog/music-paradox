@@ -1,7 +1,7 @@
 {
-  "name": "venz music bot",
+  "name": "paradox music bot",
   "description": "Bot Musik Telegram dengan fungsi yang tepat ditulis dengan Python dengan Pyrogram dan Py-Tgcalls.",
-  "logo": "https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg",
+  "logo": "https://telegra.ph/file/3db5be2f3bfa692e92624.jpg",
   "keywords": [
   "python3",
   "telegram",
