@@ -1,4 +1,5 @@
-<p align="center"><img src="https://github.com/elskuyy/bokeppolitik/https://telegra.ph/file/9cfbfa45850c1dab86654.jpg
+<p align="center">
+  <img src="https://telegra.ph/file/9cfbfa45850c1dab86654.jpg">
 
 <h4 align="center">
     Bot Telegram Music+video yang ditulis dengan Python menggunakan Pyrogram dan Py-Tgcalls 
