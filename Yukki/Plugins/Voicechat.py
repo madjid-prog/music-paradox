@@ -109,7 +109,7 @@ async def activevc(_, message: Message):
 
         msg = "**Daftar Antrian**\n\n"
         msg += "**Sedang Memutar:**"
-        msg += "\n▶️" + Diputar saat ini [:30]
+        msg += "\n▶️" + current_playing [:30]
         msg += f"\n   ╚Oleh:- {user_name}"
         msg += f"\n   ╚Durasi:- Remaining `{dur_left}` out of `{duration_min}` Mins."
         fetched.pop(0)
