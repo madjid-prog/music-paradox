@@ -72,13 +72,13 @@ Hanya untuk Pengguna Sudo
 async def admins(_, message: Message):
     global get_queue
     if not len(message.command) == 1:
-        return await message.reply_text("Error! Wrong Usage of Command.")
+        return await message.reply_text("Kesalahan! Penggunaan Perintah yang Salah.")
     if not await is_active_chat(message.chat.id):
-        return await message.reply_text("Nothing is playing on voice chat.")
+        return await message.reply_text("Tidak ada yang diputar di obrolan suara.")
     chat_id = message.chat.id
     if message.command[0][1] == "a":
         if not await is_music_playing(message.chat.id):
-            return await message.reply_text("Music is already Paused.")
+            return await message.reply_text("Musik sudah Dijeda.")
         await music_off(chat_id)
         await pause_stream(chat_id)
         await message.reply_text(
@@ -86,7 +86,7 @@ async def admins(_, message: Message):
         )
     if message.command[0][1] == "e":
         if await is_music_playing(message.chat.id):
-            return await message.reply_text("Music is already Playing.")
+            return await message.reply_text("Musik sudah Diputar.")
         await music_on(chat_id)
         await resume_stream(chat_id)
         await message.reply_text(
